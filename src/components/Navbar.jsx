@@ -33,7 +33,7 @@ function Navbar() {
                                     pathname === link.path
                                         ? 'text-black dark:text-white font-bold'
                                         : 'text-gray-600 dark:text-gray-400 font-semibold'
-                                } hover:text-gray-900 dark:hover:text-gray-200 transition-all duration-150 ease-in-out`}
+                                } hover:text-gray-900 dark:hover:text-gray-200 transition-all duration-150 ease`}
                             >
                                 {link.name}
                             </Link>
