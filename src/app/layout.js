@@ -1,5 +1,4 @@
 import { ThemeProvider } from '@/components/theme-provider';
-import Image from 'next/image';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 
