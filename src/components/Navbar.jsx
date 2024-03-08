@@ -17,7 +17,7 @@ function Navbar() {
     ];
     return (
         <>
-            <div className="hidden lg:flex backdrop-filter backdrop-blur-3xl opacity-80 bg-background dark:bg-background text-black dark:text-white dark:border-gray-700 border-2 border-gray-200 w-[90vw] h-16 fixed top-0 z-50 items-center justify-between px-4 sm:px-8 transition-all duration-300 ease-in-out shadow-md rounded-lg my-3">
+            <div className="hidden lg:flex backdrop-filter backdrop-blur-3xl opacity-80 bg-background dark:bg-background text-black dark:text-white dark:border-border border-2 border-border w-[90vw] h-16 fixed top-0 z-50 items-center justify-between px-4 sm:px-8 transition-all duration-300 ease-in-out shadow-md rounded-lg my-3">
                 <div className="flex items-center space-x-4 w-1/3 text-start">
                     <h1 className="font-bold text-2xl text-black dark:text-white">
                         Real Estate
@@ -44,7 +44,7 @@ function Navbar() {
                     <DarkModeToggle />
                 </div>
             </div>
-            <div className="lg:hidden flex backdrop-filter backdrop-blur-3xl bg-background dark:bg-background dark:text-white dark:border-gray-700 border-b-2 border-gray-200 w-full h-16 fixed top-0 z-50 items-center justify-between px-4 sm:px-8 lg:px-16 xl:px-24 shadow-md">
+            <div className="lg:hidden flex backdrop-filter backdrop-blur-3xl bg-background dark:bg-background dark:text-white dark:border-border border-b-2 border-border w-full h-16 fixed top-0 z-50 items-center justify-between px-4 sm:px-8 lg:px-16 xl:px-24 shadow-md">
                 <div className="space-x-4">
                     <h1 className="font-bold text-2xl">Real Estate</h1>
                 </div>
@@ -59,7 +59,7 @@ function Navbar() {
                 </div>
 
                 {showMenu && (
-                    <div className="absolute top-16 left-0 w-full bg-background dark:bg-background dark:text-white dark:border-gray-700 border-b-2 border-gray-200 p-4 shadow-md origin-top animate-open-menu">
+                    <div className="absolute top-16 left-0 w-full bg-background dark:bg-background dark:text-white dark:border-border border-b-2 border-border p-4 shadow-md origin-top animate-open-menu">
                         {NavLinks.map((link) => {
                             return (
                                 <Link
