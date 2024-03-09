@@ -16,8 +16,8 @@ const FeaturedPosts = ({ blogs }) => {
             <div className="w-full inline-block font-bold capitalize text-2xl md:text-4xl text-black dark:text-white mb-12">
                 <h1>Featured Posts</h1>
             </div>
-            <div className="relative grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 overflow-hidden">
-                <div className="group row-span-2 col-span-1 h-full w-full overflow-hidden">
+            <div className="relative grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 overflow-hidden rounded-xl">
+                <div className="group row-span-2 col-span-1 h-full w-full overflow-hidden rounded-xl">
                     <div className="absolute top-0 left-0 bottom-0 right-0 row-span-2 col-span-1 w-[50%] h-full overflow-hidden bg-gradient-to-b from-transparent from-0% to-black/90 rounded-xl z-10" />
                     <Image
                         src={blogOne.image.filePath.replace('../public', '')}
@@ -41,9 +41,9 @@ const FeaturedPosts = ({ blogs }) => {
                         </Link>
                     </div>
                 </div>
-                <div className="group row-span-1 col-span-1 h-full w-full overflow-hidden">
+                <div className="group row-span-1 col-span-1 h-full w-full overflow-hidden rounded-xl">
                     <div className="grid grid-cols-3 h-full w-full overflow-hidden">
-                        <div className="col-span-1 h-full w-full overflow-hidden">
+                        <div className="col-span-1 h-full w-full rounded-xl overflow-hidden">
                             <Image
                                 src={blogTwo.image.filePath.replace(
                                     '../public',
@@ -81,9 +81,9 @@ const FeaturedPosts = ({ blogs }) => {
                         </div>
                     </div>
                 </div>
-                <div className="group row-span-1 col-span-1 h-full w-full overflow-hidden">
-                    <div className="grid grid-cols-3 h-full w-full overflow-hidden">
-                        <div className="col-span-1 h-full w-full overflow-hidden">
+                <div className="group row-span-1 col-span-1 h-full w-full overflow-hidden rounded-xl">
+                    <div className="grid grid-cols-3 h-full w-full overflow-hidden rounded-xl">
+                        <div className="col-span-1 h-full w-full overflow-hidden rounded-xl">
                             <Image
                                 src={blogThree.image.filePath.replace(
                                     '../public',
