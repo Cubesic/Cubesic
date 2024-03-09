@@ -112,8 +112,8 @@ const Header = () => {
                     className={cx(
                         'w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-0',
                         mode === 'light'
-                            ? 'bg-black text-white'
-                            : 'bg-white text-black'
+                            ? 'bg-dark text-light'
+                            : 'bg-light text-dark'
                     )}
                     aria-label="theme-switcher"
                 >
