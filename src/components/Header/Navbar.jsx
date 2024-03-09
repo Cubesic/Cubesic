@@ -17,36 +17,38 @@ function Navbar() {
     ];
     return (
         <>
-            <div className="hidden lg:flex backdrop-filter backdrop-blur-3xl opacity-80 bg-background dark:bg-background text-black dark:text-white dark:border-border border-2 border-border w-[90vw] h-16 fixed top-0 z-50 items-center justify-between px-4 sm:px-8 transition-all duration-300 ease-in-out shadow-md rounded-lg my-3">
-                <div className="flex items-center space-x-4 w-1/3 text-start">
-                    <h1 className="font-bold text-2xl text-black dark:text-white">
-                        Real Estate
-                    </h1>
-                </div>
-                <div className="flex items-center space-x-8">
-                    {NavLinks.map((link) => {
-                        return (
-                            <Link
-                                key={link.id}
-                                href={link.path}
-                                className={`text-md ${
-                                    pathname === link.path
-                                        ? 'text-black dark:text-white font-bold'
-                                        : 'text-gray-600 dark:text-gray-400 font-semibold'
-                                } hover:text-gray-900 dark:hover:text-gray-200 transition-all duration-150 ease`}
-                            >
-                                {link.name}
-                            </Link>
-                        );
-                    })}
-                </div>
-                <div className=" w-1/3 text-end">
-                    <DarkModeToggle />
+            <div className="backdrop-blur-md w-[71vw] h-16 fixed top-0 z-50 my-3 rounded-3xl">
+                <div className="hidden lg:flex opacity-90 bg-background dark:bg-background text-black dark:text-white w-[71vw] h-16 fixed top-0 z-50 dark:border-border border-2 border-border items-center justify-between px-4 sm:px-8 transition-all duration-300 ease-in-out shadow-md rounded-3xl">
+                    <div className="flex items-center space-x-4 w-1/3 text-start">
+                        <h1 className="font-bold text-2xl text-black dark:text-white">
+                            Cubesic
+                        </h1>
+                    </div>
+                    <div className="flex items-center space-x-8">
+                        {NavLinks.map((link) => {
+                            return (
+                                <Link
+                                    key={link.id}
+                                    href={link.path}
+                                    className={`text-md ${
+                                        pathname === link.path
+                                            ? 'text-black dark:text-white font-bold'
+                                            : 'text-gray-600 dark:text-gray-400 font-semibold'
+                                    } hover:text-gray-900 dark:hover:text-gray-200 transition-all duration-150 ease`}
+                                >
+                                    {link.name}
+                                </Link>
+                            );
+                        })}
+                    </div>
+                    <div className=" w-1/3 text-end">
+                        <DarkModeToggle />
+                    </div>
                 </div>
             </div>
-            <div className="lg:hidden flex backdrop-filter backdrop-blur-3xl bg-background dark:bg-background dark:text-white dark:border-border border-b-2 border-border w-full h-16 fixed top-0 z-50 items-center justify-between px-4 sm:px-8 lg:px-16 xl:px-24 shadow-md">
+            <div className="lg:hidden flex bg-background dark:bg-background dark:text-white dark:border-border border-b-2 border-border w-full h-16 fixed top-0 z-50 items-center justify-between px-4 sm:px-8 lg:px-16 xl:px-24 shadow-md">
                 <div className="space-x-4">
-                    <h1 className="font-bold text-2xl">Real Estate</h1>
+                    <h1 className="font-bold text-2xl">Cubesic</h1>
                 </div>
                 <div className="flex items-center space-x-4">
                     <DarkModeToggle />

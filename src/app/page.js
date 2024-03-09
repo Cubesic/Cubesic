@@ -1,7 +1,14 @@
+import { allBlogs } from 'contentlayer/generated';
+import HomeCoverSection from '../components/Home/HomeCoverSection';
+import FeaturedPosts from '@/components/Home/FeaturedPosts';
+
+
 export default function Home() {
+    // console.log(allBlogs);
     return (
-        <main className="flex min-h-screen flex-col items-center justify-center p-24">
-            <h1 className="font-extrabold text-4xl md:text-7xl">Home</h1>
+        <main className="flex flex-col items-center justify-center">
+            <HomeCoverSection blogs={allBlogs} />
+            <FeaturedPosts blogs={allBlogs} />
         </main>
     );
 }
