@@ -424,6 +424,8 @@ export const MediumIcon = ({ className, ...rest }) => {
             fill="none"
             viewBox="0 0 24 24"
             id="medium"
+            {...rest}
+            className={cx('w-full h-auto', className)}
         >
             <path
                 fill="url(#paint0_linear_1233_4386)"
