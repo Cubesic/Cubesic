@@ -1,6 +1,7 @@
 import { ThemeProvider } from '@/components/theme-provider';
 import './globals.css';
 import Navbar from '@/components/Header/Navbar';
+import Footer from '@/components/Footer/Footer';
 
 export const metadata = {
     title: 'Cubesic',
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
                 <ThemeProvider attribute="class" defaultTheme="dark">
                     <Navbar />
                     {children}
+                    <Footer />
                 </ThemeProvider>
             </body>
         </html>

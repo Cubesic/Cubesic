@@ -21,10 +21,10 @@ const HomeCoverSection = ({ blogs }) => {
                     fill
                     className="w-full h-full object-center group-hover:scale-105 object-cover rounded-3xl -z-10 transition-all duration-300 ease"
                     sizes="100vw"
-                    priority
+                    priority={true}
                 />
 
-                <div className="w-full lg:w-3/4 p-6 sm:p-8 md:p-12  lg:p-16 flex flex-col items-start justify-center z-0 text-white">
+                <div className="w-full lg:w-4/6 p-6 sm:p-8 md:p-12  lg:p-16 flex flex-col items-start justify-center z-0 text-white">
                     <Tag
                         link={`/categories/${slug(blog.tags[0])}`}
                         name={blog.tags[0]}
@@ -32,7 +32,9 @@ const HomeCoverSection = ({ blogs }) => {
                     />
                     <Link href={blog.url} className="mt-6">
                         <h1 className="font-bold capitalize text-lg sm:text-xl md:text-3xl lg:text-4xl">
-                            <span className="text-white">{blog.title}</span>
+                            
+                                {blog.title}
+                    
                         </h1>
                     </Link>
                     <p className="hidden sm:inline-block mt-4 md:text-lg lg:text-xl font-in">

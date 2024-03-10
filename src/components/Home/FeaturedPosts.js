@@ -12,7 +12,7 @@ const FeaturedPosts = ({ blogs }) => {
     const blogTwo = sortedBlogs[2];
     const blogThree = sortedBlogs[3];
     return (
-        <div className="relative w-[90vw] md:w-[95vw] mt-20">
+        <div className="relativew-full mt-16 sm:mt-24 md:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32">
             <div className="w-full inline-block font-bold capitalize text-2xl md:text-4xl text-black dark:text-white mb-12">
                 <h1>Featured Posts</h1>
             </div>
@@ -26,6 +26,7 @@ const FeaturedPosts = ({ blogs }) => {
                         alt={blogOne.title}
                         width={blogOne.image.width}
                         height={blogOne.image.height}
+                        priority={true}
                         className="row-span-2 col-span-1 h-full w-full object-center object-cover rounded-xl group-hover:scale-105 hover:rounded-xl transition-all ease duration-300 -z-10"
                     />
                     <div className="absolute w-full sm:w-7/10 md:w-full bottom-0 p-4 xs:p-6 sm:p-10 z-20">
@@ -35,8 +36,10 @@ const FeaturedPosts = ({ blogs }) => {
                             className="px-6 text-xs text-white !border-white sm:text-sm py-1 sm:py-2"
                         />
                         <Link href={blogOne.url} className="mt-6">
-                            <h2 className="font-bold capitalize text-sm xs:text-base sm:text-xl md:text-2xl text-white mt-2 sm:mt-4">
-                                {blogOne.title}
+                            <h2 className="group font-bold capitalize text-sm xs:text-base sm:text-xl md:text-2xl text-white mt-2 sm:mt-4">
+                                <span className="p-1 bg-gradient-to-r from-white to-white/40 bg-[length:0px_4px] dark:from-white/50 dark:to-white/25 group-hover:bg-[length:100%_4px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 ">
+                                    {blogOne.title}
+                                </span>
                             </h2>
                         </Link>
                     </div>
@@ -54,11 +57,12 @@ const FeaturedPosts = ({ blogs }) => {
                                 alt={blogTwo.title}
                                 width={blogTwo.image.width}
                                 height={blogTwo.image.height}
+                                priority={true}
                                 className="h-full w-full object-center object-cover rounded-xl group-hover:scale-105 transition-all ease duration-300 -z-10"
                             />
                         </div>
                         <div className="col-span-1 md:col-span-2 h-full w-full overflow-hidden">
-                            <div className="w-full bottom-0 p-4 xs:p-6 sm:p-10 z-20">
+                            <div className="w-full gap-8 bottom-0 p-4 xs:p-6 sm:p-10 z-20">
                                 <Tag
                                     link={`/categories/${slug(
                                         blogTwo.tags[0]
@@ -68,10 +72,12 @@ const FeaturedPosts = ({ blogs }) => {
                                 />
                                 <Link href={blogTwo.url} className="mt-8">
                                     <h2 className="font-semibold capitalize  text-base sm:text-lg mt-3">
-                                        {blogTwo.title}
+                                        <span className="p-1 bg-gradient-to-r from-black/50 to-black/50 bg-[length:0px_4px] dark:from-white/50 dark:to-white/50 group-hover:bg-[length:100%_4px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 ">
+                                            {blogTwo.title}
+                                        </span>
                                     </h2>
                                 </Link>
-                                <span className="capitalize text-gray/30 dark:text-gray-300 font-semibold text-sm  sm:text-base mt-3">
+                                <span className="capitalize  text-blue-900 dark:text-purple-600 font-bold text-sm  sm:text-base mt-3">
                                     {format(
                                         new Date(blogTwo.publishedAt),
                                         'MMMM dd, yyyy'
@@ -94,11 +100,12 @@ const FeaturedPosts = ({ blogs }) => {
                                 alt={blogThree.title}
                                 width={blogThree.image.width}
                                 height={blogThree.image.height}
+                                priority={true}
                                 className="h-full w-full object-center object-cover rounded-xl group-hover:scale-105 transition-all ease duration-300 -z-10"
                             />
                         </div>
                         <div className="col-span-1 md:col-span-2 h-full w-full overflow-hidden">
-                            <div className="w-full bottom-0 p-4 xs:p-6 sm:p-10 z-20">
+                            <div className="w-full gap-8 bottom-0 p-4 xs:p-6 sm:p-10 z-20">
                                 <Tag
                                     link={`/categories/${slug(
                                         blogThree.tags[0]
@@ -108,10 +115,12 @@ const FeaturedPosts = ({ blogs }) => {
                                 />
                                 <Link href={blogThree.url} className="mt-8">
                                     <h2 className="font-semibold capitalize text-base sm:text-lg mt-3">
-                                        {blogThree.title}
+                                        <span className="p-1 bg-gradient-to-r from-black/50 to-black/50 bg-[length:0px_4px] dark:from-white/50 dark:to-white/50 group-hover:bg-[length:100%_4px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 ">
+                                            {blogThree.title}
+                                        </span>
                                     </h2>
                                 </Link>
-                                <span className="capitalize text-gray/30 dark:text-gray-300 font-semibold text-sm sm:text-base mt-3">
+                                <span className="capitalize  text-blue-900 dark:text-purple-600 font-bold text-sm sm:text-base mt-3">
                                     {format(
                                         new Date(blogThree.publishedAt),
                                         'MMMM dd, yyyy'
