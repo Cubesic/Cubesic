@@ -13,11 +13,10 @@ const Footer = () => {
         formState: { errors },
     } = useForm();
     const onSubmit = (data) => console.log(data);
-    console.log(errors);
 
     return (
         <div
-            className="rounded-2xl mt-16 m-2 sm:m-10 bg-indigo-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100
+            className="rounded-2xl mt-16 sm:mt-24 m-2 sm:m-10 bg-indigo-600 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100
 "
         >
             <footer className="mt-16 flex flex-col items-center justify-center text-black dark:text-white ">
