@@ -1,5 +1,5 @@
 import { allBlogs } from 'contentlayer/generated';
-import BlogLayoutThree from '@/components/Blog/BlogLayoutThree';
+import BlogCardLayout from '@/components/Blog/BlogCardLayout';
 import Categories from '@/components/Blog/Categories';
 import GithubSlugger, { slug } from 'github-slugger';
 
@@ -74,7 +74,7 @@ const CategoryPage = ({ params }) => {
                         key={index}
                         className="col-span-1 row-span-1 relative"
                     >
-                        <BlogLayoutThree blog={blog} />
+                        <BlogCardLayout blog={blog} />
                     </article>
                 ))}
             </div>
