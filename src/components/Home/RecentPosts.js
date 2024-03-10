@@ -1,7 +1,7 @@
 import { sortBlogs } from '@/utils';
 import Link from 'next/link';
 import React from 'react';
-import BlogCardLayout from '../Blog/BlogCardLayout.js'
+import BlogCardLayout from '../Blog/BlogCardLayout.js';
 
 const RecentPosts = ({ blogs }) => {
     const sortedBlogs = sortBlogs(blogs);

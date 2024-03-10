@@ -32,9 +32,7 @@ const HomeCoverSection = ({ blogs }) => {
                     />
                     <Link href={blog.url} className="mt-6">
                         <h1 className="font-bold capitalize text-lg sm:text-xl md:text-3xl lg:text-4xl">
-                            
-                                {blog.title}
-                    
+                            {blog.title}
                         </h1>
                     </Link>
                     <p className="hidden sm:inline-block mt-4 md:text-lg lg:text-xl font-in">

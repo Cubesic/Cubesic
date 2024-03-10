@@ -4,7 +4,10 @@ import logo from '@/public/logo.png';
 
 const Logo = () => {
     return (
-        <Link href="/" className="flex py-6 items-center text-dark dark:text-light">
+        <Link
+            href="/"
+            className="flex py-6 items-center text-dark dark:text-light"
+        >
             <div className=" w-8 sm:w-12 overflow-hidden mr-2 md:mr-4">
                 <Image
                     src={logo}

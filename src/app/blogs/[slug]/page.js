@@ -28,7 +28,10 @@ export async function generateMetadata({ params }) {
     if (blog.image) {
         imageList =
             typeof blog.image.filePath === 'string'
-                ? [siteMetadata.siteUrl + blog.image.filePath.replace('../public', ''),]
+                ? [
+                      siteMetadata.siteUrl +
+                          blog.image.filePath.replace('../public', ''),
+                  ]
                 : blog.image;
     }
     const ogImages = imageList.map((img) => {
@@ -74,7 +77,10 @@ export default function BlogPage({ params }) {
     if (blog.image) {
         imageList =
             typeof blog.image.filePath === 'string'
-                ? [siteMetadata.siteUrl + blog.image.filePath.replace('../public', ''),]
+                ? [
+                      siteMetadata.siteUrl +
+                          blog.image.filePath.replace('../public', ''),
+                  ]
                 : blog.image;
     }
 
