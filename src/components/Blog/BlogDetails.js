@@ -2,6 +2,8 @@ import { format, parseISO } from 'date-fns';
 import Link from 'next/link';
 import React from 'react';
 import { slug } from 'github-slugger';
+import Tag from '../Elements/Tag';
+
 
 const BlogDetails = ({ blog, slug: blogSlug }) => {
     return (
@@ -10,9 +12,11 @@ const BlogDetails = ({ blog, slug: blogSlug }) => {
                 {format(parseISO(blog.publishedAt), 'LLLL d, yyyy')}
             </time>
             <div className="m-3">{blog.readingTime.text}</div>
-            <Link href={`/categories/${slug(blog.tags[0])}`} className="m-3">
-                #{blog.tags[0]}
-            </Link>
+            <Tag
+                link={`/categories/${slug(blog.tags[0])}`}
+                name={blog.tags[0]}
+                className="text-white !border-white"
+            />
         </div>
     );
 };
