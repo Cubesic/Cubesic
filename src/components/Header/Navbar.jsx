@@ -22,7 +22,7 @@ const Header = () => {
         setClick(!click);
     };
     return (
-        <header className="h-16 py-4 px-5 sm:px-10 sm:pt-12 flex flex-row items-center justify-between">
+        <header className="h-16 py-4 px-5 sm:px-10 sm:pt-12 flex flex-row items-center justify-between mb-12">
             <Logo />
 
             <button
