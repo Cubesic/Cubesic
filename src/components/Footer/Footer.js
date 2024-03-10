@@ -32,7 +32,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <LinkedinIcon className="hover:scale-125 transition-all ease duration-200" />
+                        <LinkedinIcon className="hover:scale-125 transition-all ease duration-100" />
                     </a>
                     <a
                         href={siteMetadata.twitter}
@@ -41,7 +41,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <TwitterIcon className="hover:scale-125 transition-all ease duration-200" />
+                        <TwitterIcon className="hover:scale-125 transition-all ease duration-100" />
                     </a>
                     <a
                         href={siteMetadata.github}
@@ -50,7 +50,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <GithubIcon className="fill-black dark:fill-white  hover:scale-125 transition-all ease duration-200" />
+                        <GithubIcon className="fill-black dark:fill-white  hover:scale-125 transition-all ease duration-100" />
                     </a>
                     <a
                         href={siteMetadata.medium}
@@ -63,7 +63,7 @@ const Footer = () => {
                             alt="Medium"
                             width={48}
                             height={48}
-                            className="hover:scale-125 transition-all ease duration-200"
+                            className="hover:scale-125 transition-all ease duration-100"
                         />
                     </a>
                 </div>

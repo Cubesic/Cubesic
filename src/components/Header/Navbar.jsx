@@ -22,11 +22,11 @@ const Header = () => {
         setClick(!click);
     };
     return (
-        <header className="h-16 py-4 px-5 sm:px-10 sm:pt-12 flex flex-row items-center justify-between mb-12">
+        <header className="h-16 md:h-16 py-4 px-5 sm:px-10 sm:pt-12 flex flex-row items-center justify-between sm:mb-10">
             <Logo />
 
             <button
-                className="inline-block sm:hidden z-50"
+                className="inline-block sm:hidden z-50 px-4"
                 onClick={toggle}
                 aria-label="Hamburger Menu"
             >
@@ -129,7 +129,7 @@ const Header = () => {
                 <a
                     href={siteMetadata.linkedin}
                     rel="noopener noreferrer"
-                    className="inline-block w-6 h-6 mr-4"
+                    className="inline-block w-4 h-4 md:w-6 md:h-6 mr-4"
                     aria-label="Reach out to me via LinkedIn"
                     target="_blank"
                 >
@@ -138,7 +138,7 @@ const Header = () => {
                 <a
                     href={siteMetadata.twitter}
                     rel="noopener noreferrer"
-                    className="inline-block w-6 h-6 mr-4"
+                    className="inline-block w-4 h-4 md:w-6 md:h-6 mr-4"
                     aria-label="Reach out to me via Twitter"
                     target="_blank"
                 >
@@ -147,7 +147,7 @@ const Header = () => {
                 <a
                     href={siteMetadata.github}
                     rel="noopener noreferrer"
-                    className="inline-block w-6 h-6 mr-4"
+                    className="inline-block w-4 h-4 md:w-6 md:h-6 mr-4"
                     aria-label="Check my profile on Github"
                     target="_blank"
                 >
@@ -156,7 +156,7 @@ const Header = () => {
                 <a
                     href={siteMetadata.medium}
                     rel="noopener noreferrer"
-                    className="inline-block w-6 h-6 mr-4"
+                    className="inline-block w-4 h-4 md:w-6 md:h-6 mr-4"
                     aria-label="Check my profile on Medium"
                     target="_blank"
                 >

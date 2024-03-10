@@ -8,7 +8,7 @@ const Logo = () => {
             href="/"
             className="flex py-6 items-center text-dark dark:text-light"
         >
-            <div className=" w-8 sm:w-12 overflow-hidden mr-2 md:mr-4">
+            <div className=" w-8 md:w-12 overflow-hidden mr-2 md:mr-4">
                 <Image
                     src={logo}
                     alt="Cubesic logo"

@@ -10,7 +10,7 @@ const HomeCoverSection = ({ blogs }) => {
     const blog = sortedBlogs[0];
 
     return (
-        <div className="w-full flex items-center justify-center mt-[35px]">
+        <div className="w-full flex items-center justify-center mt-[8px] md:mt-[18px]">
             <article className="group w-full flex flex-col items-start justify-end mx-5 sm:mx-10 relative h-[55vh] sm:h-[60vh] md:h-[65vh] lg:h-[75vh] xl:w-[95vw] overflow-hidden rounded-3xl">
                 <div className="absolute top-0 left-0 bottom-0 right-0 h-full bg-gradient-to-b from-transparent from-0% to-black/90 rounded-3xl z-0" />
                 <Image
