@@ -1,12 +1,12 @@
 // please update required information
 const siteMetadata = {
-    title: 'Next.js Blog With Tailwind CSS and Contentlayer',
-    author: 'cubesic',
-    headerTitle: 'Next.js Blog',
-    description: 'A blog created with Next.js, Tailwind.css and contentlayer.',
+    title: 'Cubesic',
+    author: 'Cubesic',
+    headerTitle: 'Cubesic',
+    description: 'Cubesic is a blogpost website for sharing knowledge and experience in different jobs.',
     language: 'en-us',
     theme: 'system', // system, dark or light
-    siteUrl: '', // your website URL
+    siteUrl: 'https://cubesic.vercel.app/', // your website URL
     siteLogo: '/logo.png',
     socialBanner: '/social-banner.png', // add social banner in the public folder
     email: 'cubesic@gmail.com',
