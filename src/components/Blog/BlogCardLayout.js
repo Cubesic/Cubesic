@@ -2,6 +2,7 @@ import { format } from 'date-fns';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { slug } from 'github-slugger';
 
 const BlogCardLayout = ({ blog }) => {
     return (
@@ -22,7 +23,9 @@ const BlogCardLayout = ({ blog }) => {
 
             <div className="flex flex-col w-full mt-4">
                 <span className="uppercase text-blue-900 dark:text-purple-600 font-bold text-xs sm:text-sm">
-                    {blog.tags[0]}
+                    <Link href={`/categories/${slug(blog.tags[0])}`}>
+                        {blog.tags[0]}
+                    </Link>
                 </span>
                 <Link href={blog.url} className="inline-block my-1">
                     <h2 className="font-semibold capitalize  text-base sm:text-lg">

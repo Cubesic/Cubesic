@@ -12,7 +12,7 @@ const FeaturedPosts = ({ blogs }) => {
     const blogTwo = sortedBlogs[2];
     const blogThree = sortedBlogs[3];
     return (
-        <div className="relativew-full mt-16 sm:mt-24 md:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32">
+        <div className="relativew-full mt-16 md:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32">
             <div className="w-full inline-block font-bold capitalize text-2xl md:text-4xl text-black dark:text-white mb-12">
                 <h2>Featured Posts</h2>
             </div>
