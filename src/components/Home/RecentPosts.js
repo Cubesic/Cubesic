@@ -24,7 +24,7 @@ const RecentPosts = ({ blogs }) => {
                     return (
                         <article
                             key={index}
-                            className="col-span-1 row-span-1 relative "
+                            className="col-span-1 row-span-1 relative"
                         >
                             <BlogCardLayout blog={blog} />
                         </article>

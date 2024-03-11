@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const BlogCardLayout = ( blog, priority ) => {
+const BlogCardLayout = ({ blog }) => {
     return (
         <div className="group flex flex-col items-center text-black dark:text-white">
             <Link href={blog.url} className="h-full rounded-xl overflow-hidden">
