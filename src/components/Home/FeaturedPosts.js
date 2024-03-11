@@ -33,7 +33,7 @@ const FeaturedPosts = ({ blogs }) => {
                         <Tag
                             link={`/categories/${slug(blogOne.tags[0])}`}
                             name={blogOne.tags[0]}
-                            className="px-6 text-xs text-white !border-white sm:text-sm py-1 sm:py-2"
+                            className="px-6 text-xs dark:text-white dark:border-white text-black border-black sm:text-sm py-1 sm:py-2"
                         />
                         <Link href={blogOne.url} className="mt-6">
                             <h2 className="group font-bold capitalize text-sm xs:text-base sm:text-xl md:text-2xl text-white mt-2 sm:mt-4">

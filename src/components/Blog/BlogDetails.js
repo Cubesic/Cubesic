@@ -14,7 +14,7 @@ const BlogDetails = ({ blog, slug: blogSlug }) => {
             <Tag
                 link={`/categories/${slug(blog.tags[0])}`}
                 name={blog.tags[0]}
-                className="text-white !border-white"
+                className="dark:text-white dark:border-white text-black border-black"
             />
         </div>
     );

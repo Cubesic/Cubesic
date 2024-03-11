@@ -3,6 +3,7 @@ import './globals.css';
 import Navbar from '@/components/Header/Navbar';
 import Footer from '@/components/Footer/Footer';
 import siteMetadata from '../utils/siteMetaData';
+import { Toaster } from '@/components/ui/sonner';
 
 export const metadata = {
     metadataBase: new URL(siteMetadata.siteUrl),
@@ -46,6 +47,7 @@ export default function RootLayout({ children }) {
                 <ThemeProvider attribute="class" defaultTheme="dark">
                     <Navbar />
                     {children}
+                    <Toaster />
                     <Footer />
                 </ThemeProvider>
             </body>

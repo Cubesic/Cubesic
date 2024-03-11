@@ -6,6 +6,8 @@ import { allBlogs } from 'contentlayer/generated';
 import { slug } from 'github-slugger';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import { Comments } from '@/components/Blog/Comments';
+import { supabase } from '@/lib/supabase/server';
 
 export async function generateStaticParams() {
     return allBlogs.map((blog) => ({ slug: blog._raw.flattenedPath }));
@@ -64,8 +66,8 @@ export async function generateMetadata({ params }) {
     };
 }
 
-export default function BlogPage({ params }) {
-    const blog = allBlogs.find(
+export default async function BlogPage({ params }) {
+    const blog = await allBlogs.find(
         (blog) => blog._raw.flattenedPath === params.slug
     );
 
@@ -74,6 +76,7 @@ export default function BlogPage({ params }) {
     }
 
     let imageList = [siteMetadata.socialBanner];
+
     if (blog.image) {
         imageList =
             typeof blog.image.filePath === 'string'
@@ -83,6 +86,12 @@ export default function BlogPage({ params }) {
                   ]
                 : blog.image;
     }
+
+    const comments = await supabase
+        .from('comments')
+        .select('post_id, nickname, payload, created_at, id, published, email')
+        .eq('post_id', params.slug)
+        .order('created_at', { ascending: true });
 
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -115,9 +124,9 @@ export default function BlogPage({ params }) {
                         <Tag
                             name={blog.tags[0]}
                             link={`/categories/${slug(blog.tags[0])}`}
-                            className="px-6 text-sm py-2"
+                            className="px-6 text-sm dark:text-white dark:border-white text-black border-black py-2"
                         />
-                        <h1 className="inline-block mt-6 font-semibold capitalize text-light text-2xl md:text-3xl lg:text-5xl !leading-normal relative w-5/6">
+                        <h1 className="inline-block mt-6 font-semibold capitalize text-white text-2xl md:text-3xl lg:text-5xl !leading-normal relative w-5/6">
                             {blog.title}
                         </h1>
                     </div>
@@ -138,7 +147,7 @@ export default function BlogPage({ params }) {
 
                 <BlogDetails blog={blog} slug={params.slug} />
 
-                <div className="grid grid-cols-12  gap-y-8 lg:gap-8 sxl:gap-16 mt-8 px-5 md:px-10">
+                <div className="grid grid-cols-12  gap-y-8 lg:gap-8 sxl:gap-16 my-8 px-5 md:px-10">
                     <div className="col-span-12  lg:col-span-4">
                         <details
                             className="border-[1px] border-solid border-dark dark:border-light text-dark dark:text-light rounded-lg p-4 sticky top-6 max-h-[80vh] overflow-hidden overflow-y-auto"
@@ -177,6 +186,7 @@ export default function BlogPage({ params }) {
                     </div>
                     <RenderMdx blog={blog} />
                 </div>
+                <Comments id={params.slug} comments={comments.data} />
             </article>
         </>
     );
