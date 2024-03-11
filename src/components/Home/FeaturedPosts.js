@@ -14,7 +14,7 @@ const FeaturedPosts = ({ blogs }) => {
     return (
         <div className="relativew-full mt-16 sm:mt-24 md:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32">
             <div className="w-full inline-block font-bold capitalize text-2xl md:text-4xl text-black dark:text-white mb-12">
-                <h1>Featured Posts</h1>
+                <h2>Featured Posts</h2>
             </div>
             <div className="relative grid grid-cols-1 grid-rows-4 lg:grid-cols-2 lg:grid-rows-2 gap-4 overflow-hidden rounded-xl">
                 <div className=" relative group row-span-2 lg:row-span-2 col-span-1 h-full w-full overflow-hidden rounded-xl">
