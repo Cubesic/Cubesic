@@ -57,7 +57,6 @@ const FeaturedPosts = ({ blogs }) => {
                                 alt={blogTwo.title}
                                 width={blogTwo.image.width}
                                 height={blogTwo.image.height}
-                                priority={true}
                                 className="h-full w-full object-center object-cover rounded-xl group-hover:scale-105 transition-all ease duration-300 -z-10"
                             />
                         </div>
@@ -100,7 +99,6 @@ const FeaturedPosts = ({ blogs }) => {
                                 alt={blogThree.title}
                                 width={blogThree.image.width}
                                 height={blogThree.image.height}
-                                priority={true}
                                 className="h-full w-full object-center object-cover rounded-xl group-hover:scale-105 transition-all ease duration-300 -z-10"
                             />
                         </div>

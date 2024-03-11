@@ -14,7 +14,7 @@ const Logo = () => {
                     alt="Cubesic logo"
                     className="w-full h-full"
                     sizes="20vw"
-                    priority
+                    priority={true}
                 />
             </div>
             <span className="font-bold dark:font-semibold text-xl md:text-xl">
