@@ -14,7 +14,7 @@ const BlogCardLayout = ( blog, priority ) => {
                     alt={blog.title}
                     width={blog.image.width}
                     height={blog.image.height}
-                    priority={priority}
+                    priority={true}
                     className=" aspect-[4/3] w-full h-full object-cover object-center  group-hover:scale-105 transition-all ease duration-300 "
                     sizes="(max-width: 640px) 100vw,(max-width: 1024px) 50vw, 33vw"
                 />
