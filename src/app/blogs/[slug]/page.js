@@ -124,7 +124,7 @@ export default async function BlogPage({ params }) {
                         <Tag
                             name={blog.tags[0]}
                             link={`/categories/${slug(blog.tags[0])}`}
-                            className="px-6 text-sm dark:text-white dark:border-white text-black border-black py-2"
+                            className="px-6 text-sm text-white border-white py-2"
                         />
                         <h1 className="inline-block mt-6 font-semibold capitalize text-white text-2xl md:text-3xl lg:text-5xl !leading-normal relative w-5/6">
                             {blog.title}
