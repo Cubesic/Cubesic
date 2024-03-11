@@ -20,7 +20,7 @@ const Footer = () => {
 "
         >
             <footer className="mt-16 flex flex-col items-center justify-center text-black dark:text-white ">
-                <h3 className="font-medium dark:font-bold text-center capitalize text-4xl lg:text-7xl px-4">
+                <h3 className="font-bold text-center capitalize text-4xl lg:text-7xl px-4">
                     Follow Us
                 </h3>
 

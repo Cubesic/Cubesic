@@ -12,12 +12,19 @@ tags:
 
 <div className='prose'>
 
-<h1 className="text-4xl mb-4 font-bold">Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye fotypography and a lot of complex custom CSS.</h1>
+<h1 className="text-4xl mb-4 font-bold">
+    Until now, trying to style an article, document, or blog post with Tailwind
+    has been a tedious task that required a keen eye fotypography and a lot of
+    complex custom CSS.
+</h1>
 <br />
-By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up beinreally useful for building application UIs because you spend less time undoing user-agent styles, but when you _really are_ justrying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive
-We get lots of complaints about it actually, with people regularly asking us things like:
-
-
+By default, Tailwind removes all of the default browser styling from paragraphs,
+headings, lists and more. This ends up beinreally useful for building
+application UIs because you spend less time undoing user-agent styles, but when
+you _really are_ justrying to style some content that came from a rich-text
+editor in a CMS or a markdown file, it can be surprising and unintuitive We get
+lots of complaints about it actually, with people regularly asking us things
+like:
 
 > Why is Tailwind removing the default styles on my `h1` elements? How do I disable this? What do you mean I lose all the other base styles too?
 > We hear you, but we're not convinced that simply disabling our base styles is what you really want. You don't want to have to remove annoying margins every time you use a `p` element in a piece of your dashboard UI. And I doubt you really want your blog posts to use the user-agent styles either — you want them to look _awesome_, not awful.
@@ -25,7 +32,6 @@ We get lots of complaints about it actually, with people regularly asking us thi
 The `@tailwindcss/typography` plugin is our attempt to give you what you _actually_ want, without any of the downsides of doing something stupid like disabling our base styles.
 
 It adds a new `prose` class that you can slap on any block of vanilla HTML content and turn it into a beautiful, well-formatted document:
-
 
 <article>
     <h1>Garlic bread with cheese: What the science tells us</h1>
@@ -41,14 +47,15 @@ It adds a new `prose` class that you can slap on any block of vanilla HTML conte
     </p>
 </article>
 
-
 For more information about how to use the plugin and the features it includes, [read the documentation](https://github.com/tailwindcss/typography/blob/master/README.md).
 
 ---
-<h1 className="text-4xl mb-4 font-bold">
-# What to expect from here on out?
-</h1>
-What follows from here is just a bunch of absolute nonsense I've written to dogfood the plugin itself. It includes every sensible typographic element I could think of, like **bold text**, unordered lists, ordered lists, code blocks, block quotes, _and even italics_.
+
+<h1 className="text-4xl mb-4 font-bold"># What to expect from here on out?</h1>
+What follows from here is just a bunch of absolute nonsense I've written to dogfood
+the plugin itself. It includes every sensible typographic element I could think of,
+like **bold text**, unordered lists, ordered lists, code blocks, block quotes, _and
+even italics_.
 
 It's important to cover all of these use cases for a few reasons:
 

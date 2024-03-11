@@ -6,5 +6,5 @@
             "contentlayer/generated": ["./.contentlayer/generated"],
             "@/public/*": ["./public/*"]
         }
-    },
+    }
 }

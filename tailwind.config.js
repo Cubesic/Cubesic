@@ -7,7 +7,7 @@ module.exports = {
         './app/**/*.{js,jsx,md,mdx}',
         './src/**/*.{js,jsx,md,mdx}',
         './.contentlayer/**/*.{js,jsx,md,mdx}',
-        './content/**/*.{js,jsx,md,mdx}'
+        './content/**/*.{js,jsx,md,mdx}',
     ],
     prefix: '',
     theme: {
@@ -80,5 +80,8 @@ module.exports = {
             },
         },
     },
-    plugins: [require('tailwindcss-animate', '@tailwindcss/typography')],
+    plugins: [
+        require('tailwindcss-animate'),
+        require('@tailwindcss/typography'),
+    ],
 };

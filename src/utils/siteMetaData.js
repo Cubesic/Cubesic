@@ -3,7 +3,8 @@ const siteMetadata = {
     title: 'Cubesic',
     author: 'Cubesic',
     headerTitle: 'Cubesic',
-    description: 'Cubesic is a blogpost website for sharing knowledge and experience in different jobs.',
+    description:
+        'Cubesic is a blogpost website for sharing knowledge and experience in different jobs.',
     language: 'en-us',
     theme: 'system', // system, dark or light
     siteUrl: 'https://cubesic.vercel.app/', // your website URL
