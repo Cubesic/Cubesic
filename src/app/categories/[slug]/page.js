@@ -74,7 +74,7 @@ const CategoryPage = ({ params }) => {
                         key={index}
                         className="col-span-1 row-span-1 relative"
                     >
-                        <BlogCardLayout blog={blog} priority={true} />
+                        <BlogCardLayout blog={blog} />
                     </article>
                 ))}
             </div>

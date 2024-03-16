@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import { slug } from 'github-slugger';
 
-const BlogCardLayout = ( blog, priority=false ) => {
+const BlogCardLayout = ({ blog }) => {
     return (
         <div className="group flex flex-col items-center text-black dark:text-white">
             <Link href={blog.url} className="h-full rounded-xl overflow-hidden">
@@ -15,7 +15,6 @@ const BlogCardLayout = ( blog, priority=false ) => {
                     alt={blog.title}
                     width={blog.image.width}
                     height={blog.image.height}
-                    priority={priority}
                     className=" aspect-[4/3] w-full h-full object-cover object-center  group-hover:scale-105 transition-all ease duration-300 "
                     sizes="(max-width: 640px) 100vw,(max-width: 1024px) 50vw, 33vw"
                 />
