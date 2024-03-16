@@ -66,8 +66,8 @@ const Blog = defineDocumentType(() => ({
                             flag?.length == 1
                                 ? 'one'
                                 : flag?.length == 2
-                                ? 'two'
-                                : 'three',
+                                  ? 'two'
+                                  : 'three',
                         text: content,
                         slug: content ? slugger.slug(content) : undefined,
                     };

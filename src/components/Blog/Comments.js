@@ -50,7 +50,10 @@ export function Comments({ id, comments }) {
                         What people are saying
                     </Heading>
                     {comments.map((comment, index) => (
-                        <div className="p-6 border mt-4 rounded-xl hover:scale-105 transition duration-150" key={index}>
+                        <div
+                            className="p-6 border mt-4 rounded-xl hover:scale-105 transition duration-150"
+                            key={index}
+                        >
                             <header className="text-sm text-white/50">
                                 {`Posted by ${comment.nickname} on ${new Date(
                                     comment.created_at
@@ -65,7 +68,7 @@ export function Comments({ id, comments }) {
                     ))}
                 </>
             )}
-            <div className='mt-12'>
+            <div className="mt-12">
                 <Heading as="h2" size="3xl">
                     Share your thoughts
                 </Heading>
