@@ -28,7 +28,7 @@ const HomeCoverSection = ({ blogs }) => {
                     <Tag
                         link={`/categories/${slug(blog.tags[0])}`}
                         name={blog.tags[0]}
-                        className="dark:text-white dark:border-white text-black border-black"
+                        className="dark:text-white dark:border-white text-white border-white"
                     />
                     <Link href={blog.url} className="mt-6">
                         <h1 className="font-bold capitalize text-lg sm:text-xl md:text-3xl lg:text-4xl">
