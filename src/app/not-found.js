@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function NotFound() {
+export default async function NotFound() {
     return (
         <main className="my-32 w-full dark:bg-dark flex justify-center font-mr">
             <div className="relative flex flex-col items-center justify-center">

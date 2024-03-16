@@ -7,7 +7,7 @@ import { toast } from 'sonner';
 import { Heading } from './Heading';
 import { useState } from 'react';
 
-export function Comments({ id, comments }) {
+export async function Comments({ id, comments }) {
     const [comment, setComment] = useState('');
     const [email, setEmail] = useState('');
     const [nickname, setNickname] = useState('');
