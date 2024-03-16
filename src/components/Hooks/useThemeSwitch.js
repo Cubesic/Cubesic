@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-export async function useThemeSwitch() {
+export function useThemeSwitch() {
     const preferDarkQuery = '(prefers-color-schema:dark)';
     const storageKey = 'theme';
 

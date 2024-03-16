@@ -3,7 +3,7 @@ import HomeCoverSection from '@/components/Home/HomeCoverSection';
 import FeaturedPosts from '@/components/Home/FeaturedPosts';
 import RecentPosts from '@/components/Home/RecentPosts';
 
-export default async function Home() {
+export default function Home() {
     // console.log(allBlogs);
     return (
         <main className="flex flex-col items-center justify-center">

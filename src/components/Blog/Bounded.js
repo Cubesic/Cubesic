@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-export async function Bounded({
+export function Bounded({
     as: Comp = 'div',
     size = 'base',
     className,
