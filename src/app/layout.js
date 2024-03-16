@@ -4,6 +4,12 @@ import Navbar from '@/components/Header/Navbar';
 import Footer from '@/components/Footer/Footer';
 import siteMetadata from '../utils/siteMetaData';
 import { Toaster } from '@/components/ui/sonner';
+import { Inter } from 'next/font/google';
+
+const inter = Inter({
+    subsets: ['latin'],
+    display: 'swap',
+});
 
 export const metadata = {
     metadataBase: new URL(siteMetadata.siteUrl),
@@ -42,7 +48,7 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
     return (
-        <html lang="en">
+        <html lang="en" className={inter.className}>
             <body className="flex flex-col justify-center">
                 <ThemeProvider attribute="class" defaultTheme="dark">
                     <Navbar />

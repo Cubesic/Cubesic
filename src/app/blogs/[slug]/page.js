@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { Comments } from '@/components/Blog/Comments';
 import { supabase } from '@/lib/supabase/server';
+import Script from 'next/script';
 
 export async function generateStaticParams() {
     return allBlogs.map((blog) => ({ slug: blog._raw.flattenedPath }));
@@ -30,10 +31,7 @@ export async function generateMetadata({ params }) {
     if (blog.image) {
         imageList =
             typeof blog.image.filePath === 'string'
-                ? [
-                      siteMetadata.siteUrl +
-                          blog.image.filePath.replace('../public', ''),
-                  ]
+                ? [siteMetadata.siteUrl + blog.image.filePath.replace('../public', ''),]
                 : blog.image;
     }
     const ogImages = imageList.map((img) => {
@@ -80,10 +78,7 @@ export default async function BlogPage({ params }) {
     if (blog.image) {
         imageList =
             typeof blog.image.filePath === 'string'
-                ? [
-                      siteMetadata.siteUrl +
-                          blog.image.filePath.replace('../public', ''),
-                  ]
+                ? [siteMetadata.siteUrl + blog.image.filePath.replace('../public', ''),]
                 : blog.image;
     }
 
@@ -114,7 +109,7 @@ export default async function BlogPage({ params }) {
 
     return (
         <>
-            <script
+            <Script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
@@ -156,7 +151,7 @@ export default async function BlogPage({ params }) {
                             <summary className="text-lg font-semibold capitalize cursor-pointer">
                                 Table Of Content
                             </summary>
-                            <ul className="mt-4 font-in text-base">
+                            <ul className="mt-4  text-base">
                                 {blog.toc.map((heading) => {
                                     return (
                                         <li

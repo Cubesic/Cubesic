@@ -35,7 +35,7 @@ const HomeCoverSection = ({ blogs }) => {
                             {blog.title}
                         </h1>
                     </Link>
-                    <p className="hidden sm:inline-block mt-4 md:text-lg lg:text-xl font-in">
+                    <p className="hidden sm:inline-block mt-4 md:text-lg lg:text-xl ">
                         {blog.description}
                     </p>
                 </div>
