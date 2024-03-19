@@ -1,4 +1,3 @@
-import { ThemeProvider } from '@/components/theme-provider';
 import './globals.css';
 import Navbar from '@/components/Header/Navbar';
 import Footer from '@/components/Footer/Footer';
@@ -50,12 +49,10 @@ export default async function RootLayout({ children }) {
     return (
         <html lang="en" className={inter.className}>
             <body className="flex flex-col justify-center">
-                <ThemeProvider attribute="class" defaultTheme="dark">
                     <Navbar />
                     {children}
                     <Toaster />
                     <Footer />
-                </ThemeProvider>
             </body>
         </html>
     );

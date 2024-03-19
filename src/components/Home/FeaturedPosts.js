@@ -12,12 +12,12 @@ const FeaturedPosts = ({ blogs }) => {
     const blogTwo = sortedBlogs[2];
     const blogThree = sortedBlogs[3];
     return (
-        <div className="relativew-full mt-16 md:mt-32 px-5 sm:px-10 md:px-24 sxl:px-32">
-            <div className="w-full inline-block font-bold capitalize text-2xl md:text-4xl text-black dark:text-white mb-12">
+        <div className="relativew-full mt-16 md:mt-24 px-5 sm:px-10 md:px-24 sxl:px-32">
+            <div className="w-full inline-block font-extrabold capitalize text-2xl md:text-4xl lg:text-5xl text-black dark:text-white mb-12">
                 <h2>Featured Posts</h2>
             </div>
-            <div className="relative grid grid-cols-1 grid-rows-4 lg:grid-cols-2 lg:grid-rows-2 gap-4 overflow-hidden rounded-xl">
-                <div className=" relative group row-span-2 lg:row-span-2 col-span-1 h-full w-full overflow-hidden rounded-xl">
+            <div className="relative grid grid-cols-1 grid-rows-3 lg:grid-cols-2 lg:grid-rows-2 gap-4 overflow-hidden rounded-xl">
+                <div className=" relative group row-span-1 lg:row-span-2 col-span-1 h-full w-full overflow-hidden rounded-xl">
                     <div className="absolute top-0 left-0 bottom-0 right-0 row-span-1 md:row-span-2 col-span-1 w-full h-full overflow-hidden bg-gradient-to-b from-transparent from-0% to-black/90 rounded-xl z-10" />
                     <Image
                         src={blogOne.image.filePath.replace('../public', '')}
@@ -36,11 +36,11 @@ const FeaturedPosts = ({ blogs }) => {
                             className="px-6 text-xs dark:text-white dark:border-white text-white border-white sm:text-sm py-1 sm:py-2"
                         />
                         <Link href={blogOne.url} className="mt-6">
-                            <h2 className="group font-bold capitalize text-sm xs:text-base sm:text-xl md:text-2xl text-white mt-2 sm:mt-4">
+                            <h3 className="group font-bold capitalize text-sm xs:text-base sm:text-xl md:text-2xl text-white mt-2 sm:mt-4">
                                 <span className="p-1 bg-gradient-to-r from-white to-white/40 bg-[length:0px_4px] dark:from-white/50 dark:to-white/25 group-hover:bg-[length:100%_4px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 ">
                                     {blogOne.title}
                                 </span>
-                            </h2>
+                            </h3>
                         </Link>
                     </div>
                 </div>
@@ -70,11 +70,11 @@ const FeaturedPosts = ({ blogs }) => {
                                     className="uppercase text-foreground dark:text-foreground font-semibold text-xs sm:text-sm mt-3"
                                 />
                                 <Link href={blogTwo.url} className="mt-8">
-                                    <h2 className="font-semibold capitalize  text-base sm:text-lg mt-3">
+                                    <h3 className="font-semibold capitalize  text-base sm:text-lg mt-3">
                                         <span className="p-1 bg-gradient-to-r from-black/50 to-black/50 bg-[length:0px_4px] dark:from-white/50 dark:to-white/50 group-hover:bg-[length:100%_4px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 ">
                                             {blogTwo.title}
                                         </span>
-                                    </h2>
+                                    </h3>
                                 </Link>
                                 <span className="capitalize  text-blue-900 dark:text-purple-600 font-bold text-sm  sm:text-base mt-3">
                                     {format(
@@ -112,11 +112,11 @@ const FeaturedPosts = ({ blogs }) => {
                                     className="uppercase text-foreground dark:text-foreground font-semibold text-xs sm:text-sm mt-3"
                                 />
                                 <Link href={blogThree.url} className="mt-8">
-                                    <h2 className="font-semibold capitalize text-base sm:text-lg mt-3">
+                                    <h3 className="font-semibold capitalize text-base sm:text-lg mt-3">
                                         <span className="p-1 bg-gradient-to-r from-black/50 to-black/50 bg-[length:0px_4px] dark:from-white/50 dark:to-white/50 group-hover:bg-[length:100%_4px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 ">
                                             {blogThree.title}
                                         </span>
-                                    </h2>
+                                    </h3>
                                 </Link>
                                 <span className="capitalize  text-blue-900 dark:text-purple-600 font-bold text-sm sm:text-base mt-3">
                                     {format(

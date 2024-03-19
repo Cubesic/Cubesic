@@ -20,7 +20,7 @@ export function useThemeSwitch() {
         if (userPref) {
             return userPref;
         }
-        return window.matchMedia(preferDarkQuery).matches ? 'dark' : 'light';
+        return window.matchMedia(preferDarkQuery).matches ? 'light' : 'dark';
     };
 
     const [mode, setMode] = useState('dark');
